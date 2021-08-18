@@ -4,7 +4,9 @@ https://hub.docker.com/r/danielhasan1/starwars-project
 ## Docker Setup:
 
 ## NEW  
-Just run `docker-compose up` by copying the docker-compose.yml file in your local in a folder and pleae create a project folder to mount.(you can change the name in file)
+Prerequisites - docker, docker-compose  
+Just run `docker-compose up` by copying the `docker-compose.yml` file in your local and you will get a running django server without having to perform any extra steps.  
+You can customise the file as per your requirement like changing the mount folder name etc. There is no need to copy the project as image already contains the project.
 ## OLD
 run `docker pull danielhasan1/starwars-project`  
 after pulling the image
