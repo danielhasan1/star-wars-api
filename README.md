@@ -2,14 +2,15 @@
 # Pull directly from docker 
 https://hub.docker.com/r/danielhasan1/starwars-project
 ## Docker Setup:
-OLD
+
+## NEW  
+Just run `docker-compose up` by copying the docker-compose.yml file in your local in a folder and pleae create a project folder to mount.(you can change the name in file)
+## OLD
 run `docker pull danielhasan1/starwars-project`  
 after pulling the image
 run `docker run -tip8000:8000 --name starwars starwars-project /bin/bash`  
 inside docker container navigate to `/opt/star-wars-api/starWarsApi`  
-in base dir of django project run `gnicorn starWarsApi.wsgi:application --bind 0.0.0.0:8000` 
-NEW
-Just run `docker-compose up` by copying the file in your local in with any folder named as project to mount
+in base dir of django project run `gnicorn starWarsApi.wsgi:application --bind 0.0.0.0:8000`  
 
 ## Or  
 Optionally you can also clone this project. 
