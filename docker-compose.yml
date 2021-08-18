@@ -1,0 +1,11 @@
+version: '2'
+services:
+  web:
+    image: starwars-project:version2
+    # depends_on:
+    #     - db
+    ports:
+        - "8000:8000"
+    volumes:
+        - ./project:/mnt/django-project
+    command: bash -c "python3.8 /opt/star-wars-api/starWarsApi/manage.py migrate && python3.8 /opt/star-wars-api/starWarsApi/manage.py runserver 0.0.0.0:8000"
