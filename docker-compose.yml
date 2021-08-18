@@ -1,7 +1,7 @@
 version: '2'
 services:
   web:
-    image: starwars-project:version2
+    image: danielhasan1/starwars-project:version2
     # depends_on:
     #     - db
     ports:
